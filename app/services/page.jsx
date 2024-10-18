@@ -18,20 +18,20 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
     href: "",
   },
-  {
-    num: "03",
-    title: "Logo Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
-    href: "",
-  },
+  // {
+  //   num: "03",
+  //   title: "Logo Design",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+  //   href: "",
+  // },
+  // {
+  //   num: "04",
+  //   title: "SEO",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+  //   href: "",
+  // },
 ];
 
 import { motion } from "framer-motion";

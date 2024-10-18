@@ -7,6 +7,7 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaAngular,
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -99,36 +100,36 @@ const education = {
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
   items: [
+    // {
+    //   institution: "Online Course Platform",
+    //   degree: "Full Stack Web Development Bootcamp",
+    //   duration: "2023",
+    // },
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "University of Moratuwa",
+      degree: "Bsc(Hons) in IT",
+      duration: "2021 - Present",
     },
     {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "Bandarawela Central College",
+      degree: "Secondery Education",
+      duration: "2010 - 2018",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
+      institution: "Welimada Vijaya Vidyalaya",
+      degree: "Primary Education",
+      duration: "2005 - 2009",
     },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
-    },
+    // {
+    //   institution: "Design School",
+    //   degree: "Diploma in Graphic Design",
+    //   duration: "2016 - 2018",
+    // },
+    // {
+    //   institution: "Community College",
+    //   degree: "Associate Degree in Computer Science",
+    //   duration: "2014 - 2016",
+    // },
   ],
 };
 
@@ -136,7 +137,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "These are the areas currently I am working in.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -151,6 +152,10 @@ const skills = {
       name: "javascript",
     },
     {
+      icon: <FaAngular />,
+      name: "angular.js",
+    },
+    {
       icon: <FaReact />,
       name: "react.js",
     },
@@ -158,14 +163,14 @@ const skills = {
       icon: <SiNextdotjs />,
       name: "next.js",
     },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
+    // {
+    //   icon: <SiTailwindcss />,
+    //   name: "tailwind.css",
+    // },
+    // {
+    //   icon: <FaNodeJs />,
+    //   name: "node.js",
+    // },
     {
       icon: <FaFigma />,
       name: "figma",
@@ -245,9 +250,9 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                {/* <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
-                </p>
+                </p> */}
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
