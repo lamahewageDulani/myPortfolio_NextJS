@@ -37,6 +37,45 @@ const info = [
 import { motion } from "framer-motion";
 
 const Contact = () => {
+  const sendMail = (event) => {
+    event.preventDefault();
+
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const email = document.getElementById("email").value;
+    const phoneNumber = document.getElementById("phoneNumber").value;
+    const message = document.getElementById("message").value;
+
+    if (!firstName || !email || !message || !phoneNumber) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    var params = {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      phoneNumber: phoneNumber,
+      message: message,
+    };
+
+    const templateID = "template_06x9crj";
+    const serviceID = "service_1agrxki";
+
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        document.getElementById("firstName").value = "";
+        document.getElementById("lastName").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phoneNumber").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!");
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -50,17 +89,17 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={sendMail}>
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
                 If you are interested in working with me, please feel free to contact me from here.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" required/>
+                <Input type="text" id="firstName" placeholder="Firstname" required />
+                <Input type="text" id="lastName" placeholder="Lastname" required />
+                <Input type="email" id="email" placeholder="Email address" required />
+                <Input type="phone" id="phoneNumber" placeholder="Phone number" required/>
               </div>
               {/* select */}
               <Select>
@@ -80,9 +119,10 @@ const Contact = () => {
               <Textarea
                 className="h-[200px]"
                 placeholder="Type your message here."
+                id="message"
               />
               {/* btn */}
-              <Button size="md" className="max-w-40">
+              <Button size="md" className="max-w-40" type="submit">
                 Send message
               </Button>
             </form>
