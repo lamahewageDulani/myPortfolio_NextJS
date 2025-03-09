@@ -16,39 +16,39 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "I am an aspiring Software Engineer passionate about solving real-world problems. Dedicated to continuous learning, I strive to enhance my skills and contribute effectively to innovative projects, making a meaningful impact in the tech industry.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Luke Coleman",
+      fieldValue: "Dulani Lamahewage",
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
+      fieldValue: "(+94)76 828 8004",
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ Years",
+      fieldValue: "1 Year",
     },
-    {
-      fieldName: "Skype",
-      fieldValue: "luke.01",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "American",
-    },
+    // {
+    //   fieldName: "Skype",
+    //   fieldValue: "luke.01",
+    // },
+    // {
+    //   fieldName: "Nationality",
+    //   fieldValue: "American",
+    // },
     {
       fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
+      fieldValue: "dulaniruwanthika99@gmail.com",
     },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
+    // {
+    //   fieldName: "Freelance",
+    //   fieldValue: "Available",
+    // },
     {
       fieldName: "Languages",
-      fieldValue: "English, Spanish",
+      fieldValue: "English, Sinhala",
     },
   ],
 };
@@ -58,38 +58,38 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "I have my experiences in frontend development, backend development and UI/UX designing sides.",
   items: [
     {
-      company: "Tech Solutions Inc.",
+      company: "MilleniumIT ESP",
       position: "Full Stack Developer",
-      duration: "2022 - Present",
+      duration: "2024 January - August",
     },
+    // {
+    //   company: "Web Design Studio",
+    //   position: "Front-End Developer Intern",
+    //   duration: "Summer 2021",
+    // },
+    // {
+    //   company: "E-commerce Startup",
+    //   position: "Freelance Web Developer",
+    //   duration: "2020 - 2021",
+    // },
+    // {
+    //   company: "Tech Academy",
+    //   position: "Teaching Assistant",
+    //   duration: "2019 - 2020",
+    // },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
-    },
-    {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
+      company: "Zynovatex",
       position: "UI/UX Designer",
-      duration: "2018 - 2019",
+      duration: "2023 August - December",
     },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
-    },
+    // {
+    //   company: "Software Development Firm",
+    //   position: "Junior Developer",
+    //   duration: "2017 - 2018",
+    // },
   ],
 };
 
