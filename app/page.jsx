@@ -23,7 +23,7 @@ const Home = () => {
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/assets/myCv/myCv.pdf" download>
+              <a href="https://drive.google.com/uc?export=download&id=1J5k_a9upXejxCcvYPsi_216naI6XzNVu" download>
                 <Button
                   variant="outline"
                   size="lg"
