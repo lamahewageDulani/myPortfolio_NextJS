@@ -8,14 +8,14 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Develop both frontend and backend of web applications using modern technologies.",
     href: "",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Design user-friendly and responsive interfaces for web applications using Figma.",
     href: "",
   },
   // {
