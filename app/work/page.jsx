@@ -22,11 +22,11 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "fullstack",
+    title: "Tracko",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "This is a project management tool that measures the performance of all employees, including QAs, to address the existing gap and implement a comprehensive performance evaluation mechanism.",
+    stack: [{ name: "React" }, { name: "Sprint boot" }, { name: "MySQL" }],
     image: "/assets/work/thumb1.png",
     live: "",
     github: "",
@@ -34,10 +34,10 @@ const projects = [
   {
     num: "02",
     category: "fullstack",
-    title: "project 2",
+    title: "Student Management System",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
+      "This project aims in adding new students to the system, edit there details and if there is need, student can be deleted. added students are displayed in a table.",
+    stack: [{ name: "React" }, { name: "Spring boot" }, { name: "MySQL" }],
     image: "/assets/work/thumb2.png",
     live: "",
     github: "",
@@ -45,10 +45,10 @@ const projects = [
   {
     num: "03",
     category: "frontend",
-    title: "project 3",
+    title: "CV Manager",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+      "An Angular-based CV management system that enables users to create accounts, upload their CVs, and manage them efficiently for easy access and retrieval.",
+    stack: [{ name: "Angular" }],
     image: "/assets/work/thumb3.png",
     live: "",
     github: "",
@@ -87,7 +87,7 @@ const Work = () => {
                 {project.category} project
               </h2>
               {/* project description */}
-              {/* <p className="text-white/60">{project.description}</p> */}
+              <p className="text-white/60">{project.description}</p>
               {/* stack */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
