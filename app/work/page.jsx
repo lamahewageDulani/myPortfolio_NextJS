@@ -84,7 +84,7 @@ const Work = () => {
               </div>
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title} 
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
