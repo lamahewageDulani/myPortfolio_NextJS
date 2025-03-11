@@ -87,7 +87,7 @@ const Work = () => {
                 {project.category} project
               </h2>
               {/* project description */}
-              <p className="text-white/60">{project.description}</p>
+              {/* <p className="text-white/60">{project.description}</p> */}
               {/* stack */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
