@@ -29,7 +29,7 @@ const projects = [
     stack: [{ name: "React" }, { name: "Sprint boot" }, { name: "MySQL" }],
     image: "/assets/work/thumb1.png",
     live: "",
-    github: "",
+    github: "https://github.com/TrackoApplication",
   },
   {
     num: "02",
@@ -40,7 +40,7 @@ const projects = [
     stack: [{ name: "React" }, { name: "Spring boot" }, { name: "MySQL" }],
     image: "/assets/work/thumb2.png",
     live: "",
-    github: "",
+    github: "https://github.com/lamahewageDulani/Student-management-system",
   },
   {
     num: "03",
@@ -51,7 +51,7 @@ const projects = [
     stack: [{ name: "Angular" }],
     image: "/assets/work/thumb3.png",
     live: "",
-    github: "",
+    github: "https://github.com/lamahewageDulani/Cv-Manager-Angular",
   },
 ];
 
@@ -105,7 +105,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                {/* <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -116,7 +116,7 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </Link> */}
                 {/* github project button */}
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
