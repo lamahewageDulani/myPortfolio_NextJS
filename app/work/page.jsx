@@ -26,7 +26,7 @@ const projects = [
     title: "Tracko",
     description:
       "This is a project management tool that measures the performance of all employees, including QAs, to address the existing gap and implement a comprehensive performance evaluation mechanism.",
-    stack: [{ name: "React" }, { name: "Sprint boot" }, { name: "MySQL" }],
+    stack: [{ name: "React" }, { name: "Sprint Boot" }, { name: "MySQL" }],
     image: "/assets/work/thumb1.png",
     live: "",
     github: "https://github.com/TrackoApplication",
@@ -37,7 +37,7 @@ const projects = [
     title: "Student Management System",
     description:
       "This project aims in adding new students to the system, edit there details and if there is need, student can be deleted. added students are displayed in a table.",
-    stack: [{ name: "React" }, { name: "Spring boot" }, { name: "MySQL" }],
+    stack: [{ name: "React" }, { name: "Spring Boot" }, { name: "MySQL" }],
     image: "/assets/work/thumb2.png",
     live: "",
     github: "https://github.com/lamahewageDulani/Student-management-system",
